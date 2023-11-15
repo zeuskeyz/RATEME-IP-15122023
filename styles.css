@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Prompt&family=Roboto&display=swap');
+
+:root{
+    --HEADINGS:'Roboto', sans-serif;
+    --RATINGS: 'Prompt', sans-serif;
+    --FOOTERS: 'Roboto', sans-serif;
+}
+.rating, .reaction{
+    /* font-family: 'Archivo', sans-serif; */
+    font-family: var(--RATINGS)
+}
+
+.headerLinks{
+    font-family: var(--HEADINGS)
+}
+
+.footerLinks {
+    font-family: var(--FOOTERS);
+}
