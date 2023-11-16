@@ -1,10 +1,11 @@
 const ratings = document.querySelectorAll('.rating');
-const agentName = document.getElementById('agentName');
+const agentScore = document.getElementById('agentScore');
 
 let respondents = 0;
 let promoters = 0;
 let passives = 0;
 let detractors = 0;
+const targetNPS = 92
 
 ratings.forEach(rating => {
     //adds an event listener to each button
@@ -15,9 +16,10 @@ ratings.forEach(rating => {
     });
 });
 
-agentName.addEventListener('click', () => {
+agentScore.addEventListener('click', () => {
     let NPS = (promoters - detractors) / respondents * 100;
-    return alert(`PROMOTERS : ${promoters}\nDETRACTORS : ${detractors}\nNPS SCORE : ${NPS}%origin master`);
+    NPS < targetNPS ? agentScore.className += 'btn-danger' : NPS > targetNPS ? agentScore.className += 'btn-success' : agentScore.className += 'btn-warning'; 
+    return agentScore.innerText = (`Your NPS : ${promoters}%`);
 })
 
 

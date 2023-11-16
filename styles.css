@@ -17,3 +17,7 @@
 .footerLinks {
     font-family: var(--FOOTERS);
 }
+
+#agentName:hover{
+    cursor: pointer;
+}
