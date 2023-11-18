@@ -20,4 +20,6 @@
 
 .emojis:hover{
     cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
 }

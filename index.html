@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,40 +9,50 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
     <title>RATE ME!</title>
   </head>
+
   <body>
     <header id="headerSection">
-
-        <nav class="navbar  bg-body-tertiary">
-            <div class="container">
-                <a class="navbar-brand headerLinks" href="#">Safaricom Shop, Migori</a>
-                <div class="" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                        <button type="button" class="btn headerLinks" id="agentName">Shezron's NPS</button>
+        <!-- NABAR SECTION -->
+        <nav class="navbar bg-warning" data-bs-theme="light">
+            <section class="container">
+                <span class="navbar-brand headerLinks">Safaricom Migori</span>
+                <div class="">
+                    <div class="navbar-nav">
+                        <button type="button" class="btn headerLinks" id="agentScore" required>Current Score</button>
                     </div>
                 </div>
-            </div>
+            </section>
         </nav>
-
     </header>
 
-    <main class="my-md-3" id="mainSection">
-        <div class="container py-md-4" id="emojiSection">
-            <div class="row gy-3">
+    <main class="my-md-1" id="mainSection">
+
+         <!-- FEEDBACK REQUEST SECTION -->
+        <section class="container text-center my-1">
+            <p class="rating">Kindly give us feedback on how you were served</p>
+        </section>
+
+        <!-- SCORECARDS SECTION -->
+        <section class="container py-md-2" id="emojiSection">
+            <div class="row gy-2">
+
+                <!-- EXCELLENT SERVICE CARD -->
                 <div class="col-12 col-md-4">
-                    <div class="card bg-dark text-center emojis" id="poor">
-                        <div class="card-header reaction fs-3 text-light">POOR!</div>
+                    <div class="card bg-dark text-center emojis">
+                        <div class="card-header reaction text-light fs-3">BEST SERVICE !</div>
                         <div class="card-body heading display-1">
-                            <a class="stretched-link" id="poor"><i class="bi bi-emoji-frown-fill text-warning" style="font-size: 200%"></i></a>
+                            <a class="stretched-link" id="excellent"><i class="bi bi-emoji-smile-fill text-warning" style="font-size: 200%"></i></a>
                         </div>
                         <div class="card-footer d-flex">
-                            <p class="text-light rating">I am completely unhappy with the customer service I got!</p>
+                            <p class="text-light rating">I am very happy with the customer service I was given!</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- AVERAGE SERVICE CARD -->
                 <div class="col-12 col-md-4 ">
                     <div class="card bg-dark text-center emojis" id="average">
-                        <div class="card-header reaction text-light fs-3">AVERAGE!</div>
+                        <div class="card-header reaction text-light fs-3">AVERAGE SERVICE !</div>
                         <div class="card-body heading display-1">
                             <a class="stretched-link" id="average"><i class="bi bi-emoji-neutral-fill text-warning" style="font-size: 200%"></i></a>
                         </div>
@@ -51,57 +62,52 @@
                     </div>
                 </div>
 
+                <!-- POOR SERVICE CARD -->
                 <div class="col-12 col-md-4">
-                    <div class="card bg-dark text-center emojis">
-                        <div class="card-header reaction text-light fs-3">EXCELLENT!</div>
+                    <div class="card bg-dark text-center emojis" id="poor">
+                        <div class="card-header reaction fs-3 text-light">POOR SERVICE !</div>
                         <div class="card-body heading display-1">
-                            <a class="stretched-link" id="excellent"><i class="bi bi-emoji-smile-fill text-warning" style="font-size: 200%"></i></a>
+                            <a class="stretched-link" id="poor"><i class="bi bi-emoji-frown-fill text-warning" style="font-size: 200%"></i></a>
                         </div>
                         <div class="card-footer d-flex">
-                            <p class="text-light rating">I am very happy with the customer service I was given - keep it up!</p>
+                            <p class="text-light rating">I am completely unhappy with the customer service I got!</p>
                         </div>
                     </div>
                 </div>
 
             </div>
-        </div>
+        </section>
 
-        <div class="container text-center mb-5 mt-2">
-            <button type="button" class="btn rating" id="agentScore">SHOW MY NPS</button>
-        </div>
+        <!-- THANK YOU SECTION -->
+        <section class="container text-center my-1">
+            <p class="rating ">Thank you and Welcome back!</p>
+        </section>        
     </main>
-
-    <footer id="footerSection">
-        <nav class="navbar navbar-expand-lg fixed-bottom bg-body-transparent">
-            <div class="container">
-                <span class="navbar-brand" href="#"></span>
-                <span class="navbar-toggler" type="span" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
-                    <span class="navbar-toggler-icon"></span>
-                </span>
+   
+    <footer class="d-none d-md-block" id="footerSection">
+        <!--ALTERNATIVE CHANNELLS SECTION-->
+        <nav class="navbar navbar-expand-lg fixed-bottom bg-warning" data-bs-theme="dark">
+            <section class="container">
+                <!-- ALTERNATIVE CHANELLS -->
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <h6 class="footerLinks">
-                        <i class="bi bi-whatsapp"></i> 0722000100 
+                    <h6 class="footerLinks fw-bold">
+                        <i class="bi bi-whatsapp"> Online assistance : </i> 0722000100 
                     </h6>
-                    <h6 class=" mx-md-auto footerLinks">
-                        <i class="bi bi-envelope-at"></i> retailcentermigori@safaricom.co.ke
+                    <h6 class=" mx-md-auto footerLinks fw-bold">
+                        <i class="bi bi-envelope-at"> Shop Email : </i> retailcentermigori@safaricom.co.ke
                     </h6>
                     
-                    <h6 class="footerLinks">
-                        <i class="bi bi-gear"></i> 0722006700
+                    <h6 class="footerLinks fw-bold">
+                        <i class="bi bi-gear"> Aftersale Services : </i> 0722006700
                     </h6>
-                
                 </div>
-            </div>
+            </section>
         </nav>
+
     </footer>
 
-    
-
     <script src="/script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
   </body>
 </html>
